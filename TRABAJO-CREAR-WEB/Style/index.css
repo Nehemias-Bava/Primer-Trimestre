@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Nunito+Sans:wght@400;800&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Moirai+One&family=Nunito+Sans:wght@400;800&family=Secular+One&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Moirai+One&family=Nunito+Sans:wght@400;800&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Secular+One&family=Tilt+Prism&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #f7f7f9;
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    background-color: #f7f7f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    padding: 5px 6%;
+}
+
+.header .logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+.header nav {
+    order: 1;
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.header .nav-links li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 900;
+    color: #151B25;
+    text-decoration: none;
+}
+
+.header .nav-links a:hover {
+    color: #151B25;
+}
+
+.header .btn {
+    order: 2;
+}
+
+.header .btn button {
+    margin-left: 30px;
+    font-weight: 700;
+    color: #F9F6F0;
+    padding: 9px 25px;
+    background: #151B25;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #151B25;
+    color: #E1E2E7;
+    transform: scale(1.1);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    border: solid 5px #151B25;
+    background-color: #151B25;
+}
+
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Moirai One', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 70px;
+    margin-top: 10px;
+}
+p {
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-ropa {
+    margin-top: 2px;
+    height: 60px;
+    background-color: #151B25;
+    padding: 5px 5px;
+}
+.nav-ropa .nav-section a{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #000000;
+    padding: 10px 40px;
+    background: #E10032;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-ropa .nav-section a:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #E10032;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.h3 {
+    background-color: #151B25;
+    margin-top: 2px;
+
+}
+
+h3 {
+    color: #F9F6F0;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.section-ropa {
+    padding: 20px;
+    background-color: #151b25;
+}
+
+.section-ropa .section-indu {
+    display: flex;
+    width: auto;
+    background-color: #F9F6F0;
+}
+
+section {
+    padding: 10px;
+    margin-top: 60px;
+    width: 1000px;
+    height: 430px;
+    border: solid 5px #F9F6F0;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: solid 2px #151B25;
+}
+
+section img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+footer {
+    background-color: #E10032;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #151b25;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer span{
+    font-size: 12px;
+}
+
+.svg {
+    width: 12px;
+    height: 12px;
+}

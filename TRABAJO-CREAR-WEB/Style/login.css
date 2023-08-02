@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Moirai+One&family=Nunito+Sans:wght@400;800&family=Poppins:wght@400;500;600;700&family=Secular+One&family=Tilt+Prism&display=swap');
+
+:root {
+    --green: #5cc1a3;
+    --lead: #8d9190;
+    --crema: #F4EBD0;
+    --sombra: #575c47;
+    --tex-white: #ffffff;
+    --text-light-gray: #e6e6e6;
+    --boddy-bg-color: #151B25;
+    --glass-bg-color: #ffffff40;
+    --border-color: #ffffff40;
+    --blur: blur(10px);
+    --button-hover-color: #0000004d;
+}
+
+.btn button {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+    color: #5cc1a3;
+    padding: 10px 25px;
+    background: #E1E2E7;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn button:hover {
+    background-color: #E1E2E7;
+    color: #5cc1a3;
+    transform: scale(1.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--boddy-bg-color);
+    color: var(--text-light-gray);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body::after,
+body::before {
+    content: '';
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+    opacity: 0.5;
+}
+body::before {
+    background-color: var(--crema);
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%);
+}
+body::after {
+    background-color: var(--sombra);
+    right: 0;
+    top: 0;
+    transform: translate(50%);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+.gradient-text {
+    background: linear-gradient(to right, var(--green), var(--lead));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form-main {
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-content .box {
+    border-color: var(--glass-bg-color);
+    border: 1px solid var(--border-color);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: var(--blur);
+}
+
+.form-content h3 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--tex-white);
+    font-weight: 500;
+}
+
+.form-content form {
+    margin: 25px 0 20px;
+}
+
+.form-content .input-box {
+    margin: 25px;
+}
+
+.form-content .input-control {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+.form-content .input-control:focus {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-content .btn {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: linear-gradient(to right, var(--green), var(--lead));
+    border: none;
+    color: var(--tex-white);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.form-content .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: -1;
+}
+
+.form-content .btn:hover::before {
+    background-color: var(--button-hover-color);
+}
+
+.form-content p {
+    text-align: center;
+}
